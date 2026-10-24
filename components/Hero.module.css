@@ -1,0 +1,119 @@
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: #0a0a0a;
+    color: #ffffff;
+    padding: 0 24px;
+    overflow: hidden;
+  }
+  
+  .container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .content {
+    max-width: 700px;
+  }
+  
+  .badge {
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.55);
+    margin-bottom: 28px;
+  }
+  
+  .title {
+    font-size: clamp(2.6rem, 5.5vw, 4.4rem);
+    font-weight: 500;
+    line-height: 1.12;
+    letter-spacing: -0.03em;
+    margin: 0 0 28px 0;
+    color: #ffffff;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 520px;
+    margin: 0 0 48px 0;
+  }
+  
+  .cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+  
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .btnPrimary {
+    background: #ffffff;
+    color: #0a0a0a;
+    border: 1.5px solid #ffffff;
+  }
+  
+  .btnPrimary:hover {
+    background: #e5e5e5;
+    transform: translateY(-1px);
+  }
+  
+  .btnSecondary {
+    background: transparent;
+    color: #ffffff;
+    border: 1.5px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .btnSecondary:hover {
+    border-color: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.05);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero {
+      min-height: 90vh;
+      padding: 100px 20px 60px;
+    }
+  
+    .title {
+      font-size: 2.5rem;
+    }
+  
+    .subtitle {
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+    }
+  
+    .cta {
+      flex-direction: column;
+    }
+  
+    .btn {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 2.15rem;
+    }
+  }
